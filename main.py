@@ -27,3 +27,6 @@ def convertPagetoPandas(page_source):
         rows.append(row)
     df = pd.DataFrame.from_records(rows, columns=["Ticker", "Ann_Date", "url"])
     return df
+
+
+# convertPagetoPandas(page_source).to_csv("test", sep='\t')
