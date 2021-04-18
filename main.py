@@ -29,4 +29,4 @@ def convertPagetoPandas(page_source):
     return df
 
 
-# convertPagetoPandas(page_source).to_csv("test", sep='\t')
+convertPagetoPandas(page_source).to_csv("test", sep='\t')
