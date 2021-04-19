@@ -18,7 +18,7 @@ def scrapeTickerId():
         tickerText= tickerElement.text
         print(tag_id, tickerText)
 
-        
+        # test
 
 
         tag_id += 1
