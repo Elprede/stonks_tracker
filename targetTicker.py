@@ -2,6 +2,7 @@ from selenium import webdriver as wd
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 import pandas as pd
+import time
 
 driver = wd.Chrome(ChromeDriverManager().install())
 driver.implicitly_wait(10)
@@ -22,5 +23,7 @@ def scrapeTickerId():
 
 
         tag_id += 1
+
+    driver.quit()
 
 scrapeTickerId()
